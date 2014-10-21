@@ -60,5 +60,5 @@ named_merged_melted <- melt(named_merged, id.vars = c("Subject", "Activity"))
 results <- cast(Subject + variable ~ Activity, data = named_merged_melted, fun = mean)
 
 ##### last step
-write.table(results, file="result.txt", sep=",", row.names=FALSE)
+write.table(results, file="result_narrow.txt", sep=",", row.names=FALSE)
 

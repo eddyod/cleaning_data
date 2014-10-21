@@ -1,32 +1,102 @@
-<h3>This codebook will describe the tidy output that is produced for the
-course project.</h3>
+Data Dictionary - Oct 2014 Getting and Cleaning Data Project
 
+Column 1
+Subject: Number from 1 to 30, each number coded to an actual person
 
-<p>The tidy output is a comma delimited file with the following
-8 columns:</p>
-<ol>
-<li>Subject</li>
-<li>variable</li>
-<li>LAYING</li>
-<li>SITTING</li>
-<li>STANDING</li>
-<li>WALKING</li>
-<li>WALKING_DOWNSTAIRS</li>
-<li>WALKING_UPSTAIRS</li>
-</ol>
-<p>
-The first column describes the code number for the actual human
-subject. The 2nd column is the full list of the variables that
-observer either the mean or the standard deviation of the relevant
-observations. The last 6 columns describe the activity associated for
-each person and for each variable. These last six variables represent
-the mean observation for each of the activities for each of the
-features.
-</p>
-<p>This results in a tidy data file with 2581 rows of data. (not
-including the header)
-</p>
-<h3>Example query</h3>
-<p>By looking at the first row of the data file. We can find the
-average BodyAccmeanX for person #1 is .22159824394 when they are Laying.
-</p>
+Column 2
+Activity: 
+1. LAYING 
+2. SITTING 
+3. STANDING 
+4. WALKING 
+5. WALKING_DOWNSTAIRS 
+6. WALKING_UPSTAIRS
+
+Columns 3 
+86 numeric variables:
+"1tBodyAccmeanX"
+"2tBodyAccmeanY"
+"3tBodyAccmeanZ"
+"41tGravityAccmeanX"
+"42tGravityAccmeanY"
+"43tGravityAccmeanZ"
+"81tBodyAccJerkmeanX"
+"82tBodyAccJerkmeanY"
+"83tBodyAccJerkmeanZ"
+"121tBodyGyromeanX"
+"122tBodyGyromeanY"
+"123tBodyGyromeanZ"
+"161tBodyGyroJerkmeanX"
+"162tBodyGyroJerkmeanY"
+"163tBodyGyroJerkmeanZ"
+"201tBodyAccMagmean"
+"214tGravityAccMagmean"
+"227tBodyAccJerkMagmean"
+"240tBodyGyroMagmean"
+"253tBodyGyroJerkMagmean"
+"266fBodyAccmeanX"
+"267fBodyAccmeanY"
+"268fBodyAccmeanZ"
+"294fBodyAccmeanFreqX"
+"295fBodyAccmeanFreqY"
+"296fBodyAccmeanFreqZ"
+"345fBodyAccJerkmeanX"
+"346fBodyAccJerkmeanY"
+"347fBodyAccJerkmeanZ"
+"373fBodyAccJerkmeanFreqX"
+"374fBodyAccJerkmeanFreqY"
+"375fBodyAccJerkmeanFreqZ"
+"424fBodyGyromeanX"
+"425fBodyGyromeanY"
+"426fBodyGyromeanZ"
+"452fBodyGyromeanFreqX"
+"453fBodyGyromeanFreqY"
+"454fBodyGyromeanFreqZ"
+"503fBodyAccMagmean"
+"513fBodyAccMagmeanFreq"
+"516fBodyBodyAccJerkMagmean"
+"526fBodyBodyAccJerkMagmeanFreq"
+"529fBodyBodyGyroMagmean"
+"539fBodyBodyGyroMagmeanFreq"
+"542fBodyBodyGyroJerkMagmean"
+"552fBodyBodyGyroJerkMagmeanFreq"
+"555angletBodyAccMeangravity"
+"556angletBodyAccJerkMeangravityMean"
+"557angletBodyGyroMeangravityMean"
+"558angletBodyGyroJerkMeangravityMean"
+"559angleXgravityMean"
+"560angleYgravityMean"
+"561angleZgravityMean"
+"4tBodyAccstdX"
+"5tBodyAccstdY"
+"6tBodyAccstdZ"
+"44tGravityAccstdX"
+"45tGravityAccstdY"
+"46tGravityAccstdZ"
+"84tBodyAccJerkstdX"
+"85tBodyAccJerkstdY"
+"86tBodyAccJerkstdZ"
+"124tBodyGyrostdX"
+"125tBodyGyrostdY"
+"126tBodyGyrostdZ"
+"164tBodyGyroJerkstdX"
+"165tBodyGyroJerkstdY"
+"166tBodyGyroJerkstdZ"
+"202tBodyAccMagstd"
+"215tGravityAccMagstd"
+"228tBodyAccJerkMagstd"
+"241tBodyGyroMagstd"
+"254tBodyGyroJerkMagstd"
+"269fBodyAccstdX"
+"270fBodyAccstdY"
+"271fBodyAccstdZ"
+"348fBodyAccJerkstdX"
+"349fBodyAccJerkstdY"
+"350fBodyAccJerkstdZ"
+"427fBodyGyrostdX"
+"428fBodyGyrostdY"
+"429fBodyGyrostdZ"
+"504fBodyAccMagstd"
+"517fBodyBodyAccJerkMagstd"
+"530fBodyBodyGyroMagstd"
+"543fBodyBodyGyroJerkMagstd"
