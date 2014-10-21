@@ -1,6 +1,6 @@
-Edward O'Donnell
+Edward O'Donnell 21 Oct 2014
 
-Data Dictionary - Oct 2014 Getting and Cleaning Data Project
+Data Dictionary - Getting and Cleaning Data Project
 
 Column 1
 Subject: Number from 1 to 30, each number coded to an actual person
