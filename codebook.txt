@@ -1,3 +1,5 @@
+Edward O'Donnell
+
 Data Dictionary - Oct 2014 Getting and Cleaning Data Project
 
 Column 1
@@ -12,8 +14,7 @@ Activity:
 5. WALKING_DOWNSTAIRS 
 6. WALKING_UPSTAIRS
 
-Columns 3 
-86 numeric variables:
+Columns 3 - 88 - numeric variables:
 "1tBodyAccmeanX"
 "2tBodyAccmeanY"
 "3tBodyAccmeanZ"
