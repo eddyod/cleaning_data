@@ -1,0 +1,32 @@
+<h3>This codebook will describe the tidy output that is produced for the
+course project.</h3>
+
+
+<p>The tidy output is a comma delimited file with the following
+8 columns:</p>
+<ol>
+<li>Subject</li>
+<li>variable</li>
+<li>LAYING</li>
+<li>SITTING</li>
+<li>STANDING</li>
+<li>WALKING</li>
+<li>WALKING_DOWNSTAIRS</li>
+<li>WALKING_UPSTAIRS</li>
+</ol>
+<p>
+The first column describes the code number for the actual human
+subject. The 2nd column is the full list of the variables that
+observer either the mean or the standard deviation of the relevant
+observations. The last 6 columns describe the activity associated for
+each person and for each variable. These last six variables represent
+the mean observation for each of the activities for each of the
+features.
+</p>
+<p>This results in a tidy data file with 2581 rows of data. (not
+including the header)
+</p>
+<h3>Example query</h3>
+<p>By looking at the first row of the data file. We can find the
+average BodyAccmeanX for person #1 is .22159824394 when they are Laying.
+</p>
