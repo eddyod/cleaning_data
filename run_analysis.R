@@ -25,12 +25,13 @@ setwd("~/programming/cleaning_data/project")
 # use write.table
 
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-variable_names <- read.table("~/programming/cleaning_data/project_data/features2.txt")
-names(variable_names) <- c("Var_Name")
+variable_names <- read.table("~/programming/cleaning_data/project_data/features2.txt",stringsAsFactors=FALSE)
+#names(variable_names) <- c("Var_Name")
 ## assign var names to X_train
 variable_name_vector <- variable_names[,1]
-variable_names <- gsub("\\(|\\)|\\-|\\,","", variable_name_vector, ignore.case=TRUE)
-variable_names <- c(variable_names, "Subject", "Activity")
+#### ??? variable_names <- gsub("\\(|\\)|\\-|\\,","", variable_name_vector, ignore.case=TRUE)
+#variable_names <- variable_name_vector
+variable_names <- c(variable_name_vector, "Subject", "Activity")
 ## activity labels
 activity_labels <- read.table("~/programming/cleaning_data/project_data/activity_labels.txt")
 names(activity_labels) <- c("Activity_Id", "Activity")
@@ -52,7 +53,7 @@ merged <- rbind(X_train, X_test)
 # give vars names
 names(merged) <- variable_names
 # get relevant columns
-named_merged <- select(merged, contains("Subject"), contains("Activity"), contains("mean"), contains("std"))
+named_merged <- select(merged, contains("Subject"), contains("Activity"), contains("mean()"), contains("std()"))
 # recode activity column
 named_merged$Activity <- newlabels[ match(named_merged$Activity, activity_labels$Activity_Id)]
 
@@ -62,5 +63,5 @@ named_merged_melted <- melt(named_merged, id.vars = c("Subject", "Activity"))
 results <- cast(Subject + Activity ~ variable, data = named_merged_melted, fun = mean)
 
 ##### last step
-write.table(unique(results), file="result_wide.txt", sep=",", row.names=FALSE)
+write.table(results, file="result_wide.txt", sep=",", row.names=FALSE)
 
