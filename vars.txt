@@ -1,20 +1,3 @@
-Edward O'Donnell 21 Oct 2014
-
-Data Dictionary - Getting and Cleaning Data Project
-
-Column 1
-Subject: Number from 1 to 30, each number coded to an actual person
-
-Column 2
-Activity: 
-1. LAYING 
-2. SITTING 
-3. STANDING 
-4. WALKING 
-5. WALKING_DOWNSTAIRS 
-6. WALKING_UPSTAIRS
-
-Columns 3 - 68 - numeric variables:
 "tBodyAccmeanX"
 "tBodyAccmeanY"
 "tBodyAccmeanZ"
