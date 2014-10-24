@@ -57,7 +57,7 @@ named_merged <- select(merged, contains("Subject"), contains("Activity"), contai
 # recode activity column
 named_merged$Activity <- newlabels[ match(named_merged$Activity, activity_labels$Activity_Id)]
 
-names(named_merged) <- gsub("^\\d+","", names(named_merged), ignore.case=TRUE)
+names(named_merged) <- gsub("^\\d+|\\(|\\)|-","", names(named_merged), ignore.case=TRUE)
 # now melt by groups
 named_merged_melted <- melt(named_merged, id.vars = c("Subject", "Activity"))
 results <- cast(Subject + Activity ~ variable, data = named_merged_melted, fun = mean)
